@@ -4,3 +4,12 @@
 ## Clojure
 
 - [deps.edn](/.clojure/deps.edn)
+
+## Spacemacs
+
+- [.spacemacs](/.spacemacs)
+
+## Git
+
+- [ssh](/.ssh/config)
+- [.gitconfig](/.gitconfig)
