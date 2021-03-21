@@ -1,0 +1,11 @@
+[user]
+	useConfigOnly = true
+	name = Remy Rojas
+	email = remy@rojas.cz
+[includeIf "gitdir:~/Work/"]
+	path = ~/Work/.gitconfig
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
