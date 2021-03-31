@@ -1,0 +1,6 @@
+rofi.kb-remove-to-eol:  Control+p
+rofi.kb-accept-entry: Control+m,Return,KP_Enter
+rofi.kb-row-down:  Down,Control+j
+rofi.kb-row-up:  Up,Control+k
+rofi.theme: /usr/share/rofi/themes/Paper.rasi
+
