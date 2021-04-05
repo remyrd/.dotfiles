@@ -58,7 +58,7 @@ set $Mon2 eDP1
 #####################################################
 
 # run with reload
-exec_always --no-startup-id al-polybar-session
+exec_always --no-startup-id ~/.config/polybar/launch.sh --docky
 exec_always --no-startup-id nitrogen --restore
 exec_always --no-startup-id xrdb -load ~/.Xresources
 
@@ -81,7 +81,7 @@ bindsym $Mod+Shift+q kill
 bindsym $Mod+s exec --no-startup-id screenlayouts.sh
 bindsym $Mod+P exec --no-startup-id jimpass
 bindsym $Mod+O exec --no-startup-id bwmenu
-bindsym $Mod+d exec --no-startup-id rofi_run -r
+bindsym $Mod+d exec --no-startup-id .config/polybar/docky/scripts/launcher.sh
 bindsym $Mod+9 exec --no-startup-id i3-lock-fancY
 
 # core
