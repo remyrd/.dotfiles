@@ -32,7 +32,7 @@ This function should only modify configuration layer settings."
 
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(
+   '(clojure
      asciidoc
      yaml
      html
@@ -70,8 +70,6 @@ This function should only modify configuration layer settings."
      syntax-checking
      version-control
      treemacs
-     emoji
-     notmuch ;;email
      )
 
 
@@ -83,9 +81,7 @@ This function should only modify configuration layer settings."
    ;; `dotspacemacs/user-config'. To use a local version of a package, use the
    ;; `:location' property: '(your-package :location "~/path/to/your-package/")
    ;; Also include the dependencies as they will not be resolved automatically.
-   dotspacemacs-additional-packages '(
-                                      sketch-themes
-                                      almost-mono-themes)
+   dotspacemacs-additional-packages '()
 
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
@@ -237,9 +233,7 @@ It should only modify the values of Spacemacs settings."
    ;; Press `SPC T n' to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
-                         madhat2r
-                         sketch-black
-                         sketch-white
+                         doom-one
                          doom-nord
                          doom-nord-light
                          espresso)
@@ -590,7 +584,10 @@ This function is called at the very end of Spacemacs initialization."
  '(rustic-ansi-faces
    ["#E5E9F0" "#99324B" "#4F894C" "#9A7500" "#3B6EA8" "#97365B" "#398EAC" "#3B4252"])
  '(safe-local-variable-values
-   '((cider-repl-display-help-banner)
+   '((cljr-libspec-whitelist "^rlws.iot-cloud.spec" "^integrant.repl$" "^day8.re-frame.http-fx$" "^tick.locale.*$" "^rlws.iot-cloud.frontend.*$" "^spell-spec.expound$" "^duct.core.resource*" "^goog.string.format")
+     (cljr-auto-clean-ns . t)
+     (cljr-favor-prefix-notation)
+     (cider-repl-display-help-banner)
      (javascript-backend . tide)
      (javascript-backend . tern)
      (javascript-backend . lsp)))
